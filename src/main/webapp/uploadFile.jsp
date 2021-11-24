@@ -14,13 +14,16 @@
 <form method="post" action="${pageContext.request.contextPath}/uploadFile"
       enctype="multipart/form-data">
 
-    Select file to upload:
-    <br />
-    <input type="file" name="file"  />
-    <br />
+    <a>Trang chủ</a>
+
+
+    <h3>
+        Upload your video here:
+    </h3>
+    <br/>
     <input type="file" name="file" />
     <br />
-    Description:
+    Description of video:
     <br />
     <input type="text" name="description" size="100" />
     <br />

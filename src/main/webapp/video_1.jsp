@@ -8,9 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Trình xem video</title>
 </head>
 <body>
-
+    <h1>
+        Description here
+    </h1>
+    <video controls>
+        <source src="video_1.mp4">
+    </video>
 </body>
 </html>
