@@ -27,7 +27,7 @@ public class UploadFileServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/WEB-INF/jsps/uploadFile.jsp");
+        RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/uploadFile.jsp");
 
         dispatcher.forward(request, response);
     }
@@ -77,7 +77,7 @@ public class UploadFileServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
             request.setAttribute("errorMessage", "Error: " + e.getMessage());
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/jsps/uploadFile.jsp");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/uploadFile.jsp");
             dispatcher.forward(request, response);
         }
     }

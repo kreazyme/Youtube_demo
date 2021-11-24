@@ -21,7 +21,7 @@ public class UploadFileResultsServlet extends HttpServlet {
             throws ServletException, IOException {
 
         RequestDispatcher dispatcher
-                = request.getServletContext().getRequestDispatcher("/WEB-INF/jsps/uploadFileResults.jsp");
+                = request.getServletContext().getRequestDispatcher("/uploadFileResults.jsp");
 
         dispatcher.forward(request, response);
     }
